@@ -1,0 +1,572 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navcontent image:hover{
+  background-color: blue;
+}
+
+.navbar{
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+#travel{
+    margin-left: 20px;
+}
+#logoimage{
+    padding: 0;
+}
+ #logoimge{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+ }
+.logocontent{
+    display: flex;
+    height: 30px;
+    margin: auto;
+}
+select{
+    margin-top: 10px;
+    border: none;
+    margin-left: 20px;
+}
+.getapp{
+    margin-top: 5px;
+    border-radius: 100px;
+    border: 1px solid black;
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+}
+.navcontent{
+    display: flex;
+    height: 40px;
+    
+    width: 50%;
+    margin: auto;
+    
+}
+.navcontent a:hover{
+       color: rgba(107, 107, 248, 0.753);
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 15px;
+}
+.keyimage{
+    height: 150px;
+    position: relative;
+    right: 37%;
+    top: 20px;
+}
+.offercontainer{
+    display: flex;
+}
+.services{
+    margin-top: 40px;
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 70px;
+    border-radius: 10px;
+    padding: 3px;
+}
+.srvicesitem{
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid black;
+
+}
+.ulitem ,ul ,li{
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+}
+.ulitem a:hover{
+    color:rgba(107, 107, 248, 0.753) ;
+    border-bottom: 2px solid black ;
+}
+.search{
+    margin-top: 3px;
+    height: 80px;
+    border-radius: 6px;
+    justify-content: center;
+    
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+   
+}
+#bu{
+    border: 1px solid black;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 30%;
+
+}#Dates{
+    border: 1px solid black;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 30%;
+
+}
+#Dates i{
+    float: left;
+
+}
+#travel{
+    border: 1px solid black;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 30%;
+
+}
+#Search{
+    background-color: rgb(30, 41, 194);
+    color: white;
+    margin: auto;
+    width: 7%;
+    height: 40px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+#Search:hover{
+    background-color: rgb(79, 79, 161);
+    color: white;
+}
+.offer{
+    display: flex;
+    background-color:  black;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    margin-top: 20px;
+    padding: 8px;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+
+}
+#offerbtn{
+    background-color: rgb(30, 41, 194);
+    color: white;
+     border-radius: 40px;
+     width: 100px;
+     height: 40px;
+     margin: auto;
+     cursor: pointer;
+}
+#offerbtn:hover{
+    background-color: rgb(97, 97, 206);
+   color: white;
+}
+#onekey{
+    color: white;
+    border-radius: 50px;
+    width: 13%;
+    height: 15px;
+    margin: auto;
+    padding: 10px;
+}
+#onekey:hover{
+    color: white;
+    background-color: rgb(102, 97, 97);
+}
+.earningcontainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 3px;
+    display: flex;
+    height: 230px;
+}
+.new{
+    background-color: black;
+    color: white;
+    width: 40px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+
+}
+.learnmore{
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 90px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+.earning{
+    width: 50%;
+    padding: 5px;
+    background-color: rgba(160, 153, 153, 0.301);
+    border-radius: 10px;
+    height: 200px;
+} 
+.earningimage{
+    width: 160%;
+    height: 210px;
+    border-radius: 10px;
+}
+.discover{
+     display: flex;
+     width: 88%;
+     margin: auto;
+     overflow: hidden;       
+}
+.resortimage{
+    width: 200px;
+}
+#scrollbtn{
+height: 40px;
+margin: auto;
+border-radius: 50%;
+width: 15%;
+background-color: rgb(173, 169, 169);
+color: blue;
+border: none;
+}
+.resortitem{
+    font-weight: bold;
+    color: white;
+     position: absolute;
+    top: 260px;
+    left: 10px;
+}
+.discoverchild{
+    display: flex;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+.resort{
+    margin: auto;
+    width: 100%;
+    position: relative; 
+}
+.img1{
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+
+}
+.img2{
+     border-radius: 10px;
+    height: 300px;
+    width: 80%;
+
+}
+.img3{
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+
+}
+.img4{
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+
+}
+.img5{
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+
+}
+.laborday{
+    background-image: url(f.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.laborcontent{
+    background-color: white;
+    width: 30%;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.unlock{    
+    background-color: rgb(30, 41, 194);
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    border-radius: 30px;
+}
+.expolrestays{
+    border: 2px solid black;
+    padding: 3px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.trendingdestination{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.trendingdestinationcontent{
+    margin: 10px;
+    height: 200px;
+    width: 40%;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.discoverimage{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.dealscontainer{
+    width: 90%;
+    margin:auto;
+    background-image: url(g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding-top: 120px;
+    border-radius: 20px;
+}
+.lastminute{
+    display: flex;
+    justify-content: space-between;
+}
+#alldeals{
+    background-color: white;
+    color: rgba(100, 100, 241, 0.829);
+    font-weight: bold;
+    border-radius: 20px;
+    width: 10%;
+    /* border: none; */
+
+}  
+.places{
+    width: 20%;
+    margin-top: 20px;
+    margin: 2px;
+    color: white;
+} 
+.placesimage{
+    height: 150px;
+    width: 100%;
+    border-radius: 30px;
+}
+.offerdeals{
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    width: 25%;
+    padding: 1px;
+}
+.dealsimage{
+    display: flex;
+}
+.memberprice{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 70%;
+    padding: 2px;
+}
+.ab{
+    color: black;
+    padding: 2px;
+    text-decoration: underline;
+}
+.uniquestays{
+width: 90%;
+margin:auto;
+display: flex;
+}
+.uniqueplaces{
+    width: 20%;
+    margin-top: 10px;
+    padding: 8px;
+    
+}
+.uniqueimage{
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+}
+.abc{
+    background-color: white;
+    color: rgb(123, 123, 231);
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 4px;
+    align-items: center;
+    width: 85%;
+}
+.appimage{
+    width: 50%;
+    padding: 5px;
+}
+.appimge{
+    width: 100%;
+    border-radius: 10px;
+}
+.expediaapp{
+display: flex;
+width: 90%;
+margin: auto;
+border-radius: 20px;
+margin-top: 20px;
+}
+.apppqr{
+    border-radius: 20px;
+    padding: 5px;
+}
+.animation{
+    height: 150px;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    animation:  div 1s linear  1s infinite alternate;
+}
+@keyframes div {
+    0%{
+        background-color: gray;
+    }
+    100%{
+        background-color: rgb(77, 74, 74);
+    }
+}
+.images{
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+}
+.imagescontent{
+    width: 40%;
+}
+.imagescontent2{
+    width:90% ;
+    height: 200px;
+    border-radius: 15px;
+}
+.outing{
+    width: 90%;
+    margin: auto;
+    margin-top: 29px;
+    display: flex;
+    height: 400px;
+}
+.imagescontent22{
+    width:100% ;
+    height: 300px;
+    border-radius: 15px;
+}
+.imagescontent2{
+    margin: 20px;
+}
+.links{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 200px;
+    overflow: scroll;
+}
+.linka{
+    width: 50%;
+}
+.linka a{
+    color: rgb(73, 73, 243);
+}
+.linka a:hover{
+  text-decoration: underline;
+}
+.linkb{
+    width: 50%;
+}
+.linkb a{
+    color: rgb(73, 73, 243);
+}
+.linkb a:hover{
+    text-decoration: underline;
+}
+.footer{
+    background-color: rgb(160, 158, 158);
+    border-radius: 10px;
+    padding: 18px;
+    margin: auto;
+    margin-top: 20px;
+}
+.company{
+    margin-top: 18px;
+    margin-left: 20px;
+    width: 30%;
+}
+.company a{
+    color: blue;
+
+}
+.company a:hover{
+    text-decoration: underline;
+}
+.footercontent{
+    display: flex;
+}
+.next{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 90px;
+    padding: 2px 3px;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+    top: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+}
+
+.previous{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 90px;
+    padding: 2px 3px;
+    border-radius: 50%;
+    position: relative;
+    right:101%;
+    top: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+}
+.discover:hover .previous{
+    opacity: 1;
+}
+.discover:hover .next{
+    opacity: 1;
+}
