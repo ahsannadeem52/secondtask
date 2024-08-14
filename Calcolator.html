@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calcaltorcontainer{
+            margin: auto;
+            width: 20%;
+            background-image: url(barasada.jpeg);
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        input{
+            width: 90%;
+            height: 30px;
+            border-radius:10px ;
+            opacity: 0.7;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        .clear{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: red;
+            color: white;
+        }
+        .plus{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: black ;
+            color: white;
+        }
+        .substract{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: black ;
+            color: white;
+        }
+        .multiple{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: black ;
+            color: white;
+        }
+        .equal{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: black ;
+            color: white;
+        }
+        .divide{
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 6px;
+            background-color: black ;
+            color: white;
+        }
+        .calcaltor1{
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="calcaltorcontainer">
+        <input type="text" readonly name="" id="input">
+        <div class="calcaltor1">
+            <button onclick="values(7)">7</button>
+            <button onclick="values(8)">8</button>
+            <button onclick="values(9)">9</button>
+            <button onclick="values('+')"  class="plus">+</button>
+        </div>
+        <div class="calcaltor1">
+            <button onclick="values(4)">4</button>
+            <button onclick="values(5)"> 5</button>
+            <button onclick="values(6)">6</button>
+            <button class="substract" onclick="values('-')">-</button>
+        </div>
+        <div class="calcaltor1">
+            <button onclick="values(1)">1</button>
+            <button onclick="values(2)">2</button>
+            <button onclick="values(3)"> 3</button>
+            <button onclick="values('*')" class="multiple">*</button>
+        </div>
+        <div class="calcaltor1">
+            <button onclick="Clear()" class="clear">C</button>
+            <button onclick="values(0)">0</button>
+            <button onclick="result( )" class="equal">=</button>
+            <button class="divide" onclick="values('/')">/</button>
+        </div>
+    </div>
+    <script>
+         var inputvalue = document.getElementById("input")
+         function values(values){
+        inputvalue.value += values
+    }
+    function result(){
+        inputvalue .value = eval(inputvalue.value)
+    }
+    function Clear(){
+        inputvalue.value = ""
+    }
+    </script>
+</body>
+</html>
