@@ -323,9 +323,10 @@ border: none;
     display: flex;
 }
 .trendingdestination{
-    display: flex;
-    width: 90%;
     margin: auto;
+    display: flex;
+     width: 88%;
+     overflow: hidden;
 }
 .trendingdestinationcontent{
     margin: 10px;
@@ -336,7 +337,7 @@ border: none;
 }
 .discoverimage{
     height: 150px;
-    width: 100%;
+    width: 272px;
     border-radius: 10px;
     
 }
@@ -371,7 +372,7 @@ border: none;
 } 
 .placesimage{
     height: 150px;
-    width: 100%;
+    width: 240px;
     border-radius: 30px;
 }
 .offerdeals{
@@ -383,6 +384,8 @@ border: none;
 }
 .dealsimage{
     display: flex;
+    width: 100%;
+    overflow: hidden;
 }
 .memberprice{
     background-color: blue;
@@ -541,7 +544,7 @@ margin-top: 20px;
     padding: 2px 3px;
     border-radius: 50%;
     position: relative;
-    right: 10px;
+    right: 20px;
     top: 100px;
     text-align: center;
     opacity: 0;
@@ -568,5 +571,87 @@ margin-top: 20px;
     opacity: 1;
 }
 .discover:hover .next{
+    opacity: 1;
+}
+.next1{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 30px;
+    padding: 2px 3px;
+    border-radius:20px ;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    right: 30px;
+}
+.previous1{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 30px;
+    padding: 2px 3px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    right: 100%;
+}
+.trendchild{
+    display: flex;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+.trendingdestination:hover .next1{
+    opacity: 1;
+}
+.trendingdestination:hover .previous1{
+    opacity: 1;
+}
+.dealschild{
+    display: flex;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+.next2{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 30px;
+    padding: 2px 3px;
+    border-radius:20px ;
+    text-align: center;
+    opacity:0 ;
+    transition: opacity 1s ease;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+    right: 20px;
+}
+.previous2{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 30px;
+    padding: 2px 3px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+    right: 101%;
+}
+.dealsimage:hover .next2{
+    opacity: 1;
+}
+.dealsimage:hover .previous2{
     opacity: 1;
 }
