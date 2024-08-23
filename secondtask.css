@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: sans-serif;
+}
 .navcontent image:hover{
   background-color: blue;
 }
@@ -11,7 +14,9 @@
     height: 60px;
     padding: 10px;
     justify-content: space-around;
-    border-bottom: 1px solid black;
+    flex-wrap: wrap-reverse;
+    box-shadow: 2px 1px 5px black;
+    border: 2px solid black;
 }
 #travel{
     margin-left: 20px;
@@ -28,11 +33,57 @@
     display: flex;
     height: 30px;
     margin: auto;
+    /* width: 20%; */
+}.shoptravel{
+    /* margin-left: 100px; */
+    width: 100px;
 }
-select{
-    margin-top: 10px;
-    border: none;
-    margin-left: 20px;
+.optioncontainer{
+margin-left: 20px;
+margin-top: 14px;
+}
+.select{
+    font-size: 15px;
+    padding: 6px;
+    margin-left: 8px;
+}
+.option1 i{
+    font-size: 20px;
+    margin: 10px;
+}
+.shoptravel i{
+    font-size: 15px;
+    margin-left: 7px;
+}
+.hovdiv{
+    background-color: white;
+    position: relative  ;
+    height: 400px;
+    width: 20%;
+    padding: 20px 10px;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 1000;
+
+}
+.hovdiv2{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-top: 1px solid black;
+}
+.optioncontainer:hover .hovdiv{
+    display: block;
+}
+.select2{
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.option1{
+    display: flex;
+    color: black;
 }
 .getapp{
     margin-top: 5px;
@@ -41,17 +92,27 @@ select{
     height: 40px;
     width: 20%;
     cursor: pointer;
+    min-width: 20%;
 }
 .navcontent{
     display: flex;
     height: 40px;
-    
-    width: 50%;
+    width: 65%;
     margin: auto;
     
 }
 .navcontent a:hover{
        color: rgba(107, 107, 248, 0.753);
+       text-shadow: 2px 2px 10px blue;
+}
+.navcontent button i{
+    font-size: 20px;
+    padding: 1px 5px ;
+}
+.navcontent button:hover{
+    background-color: white;
+    color: blue;
+    box-shadow: 2px 2px 10px -1px black;
 }
 a{
     text-decoration: none;
@@ -59,22 +120,31 @@ a{
     display: flex;
     padding: 15px;
 }
+#fa-message{
+    font-size: 20px;
+    margin-top: 17px;
+}
+#fa-message:hover{
+    color: blue;
+    text-shadow: 2px 2px 10px blue;
+}
 .keyimage{
     height: 150px;
     position: relative;
-    right: 37%;
+    right: 40%;
     top: 20px;
 }
 .offercontainer{
     display: flex;
 }
 .services{
+    margin: auto;
     margin-top: 40px;
     border: 1px solid black;
     width: 90%;
-    margin-left: 70px;
     border-radius: 10px;
     padding: 3px;
+
 }
 .srvicesitem{
     display: flex;
@@ -96,7 +166,7 @@ a{
     height: 80px;
     border-radius: 6px;
     justify-content: center;
-    
+    padding: 15px;
     
 }
 .buttons{
@@ -104,12 +174,28 @@ a{
     justify-content: center;
    
 }
+#Signinnav{
+    background-color: blue;
+    color: white;
+    margin-left: 20px;
+    height: 10px;
+    width: 50px;
+    padding: 10px 14px;
+    min-width: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 3px 5px 7px black;
+}
 #bu{
     border: 1px solid black;
-    padding: 4px;
+    padding: 4px 10px;
     margin: 2px;
     border-radius: 5px;
     width: 30%;
+    height: 50px;
 
 }#Dates{
     border: 1px solid black;
@@ -117,10 +203,12 @@ a{
     margin: 2px;
     border-radius: 5px;
     width: 30%;
+    height: 50px;
 
 }
 #Dates i{
     float: left;
+    margin: 5px;
 
 }
 #travel{
@@ -129,6 +217,7 @@ a{
     margin: 2px;
     border-radius: 5px;
     width: 30%;
+    height: 50px;
 
 }
 #Search{
@@ -144,18 +233,27 @@ a{
     background-color: rgb(79, 79, 161);
     color: white;
 }
+.search input{
+    margin: 10px;
+}
 .offer{
     display: flex;
-    background-color:  black;
+    background-color:  rgb(65, 61, 61);
     color: white;
-    border-radius: 8px;
+    border-radius: 20px;
     width: 90%;
+    margin: auto;
     margin-top: 20px;
-    padding: 8px;
-    margin-left: 70px;
+    padding: 20px 20px;
     align-items: center;
     justify-content: center;
 
+}
+.offerimg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
 }
 #offerbtn{
     background-color: rgb(30, 41, 194);
@@ -163,17 +261,18 @@ a{
      border-radius: 40px;
      width: 100px;
      height: 40px;
-     margin: auto;
+     margin: 19px 8px;
      cursor: pointer;
+     border: none;
 }
 #offerbtn:hover{
     background-color: rgb(97, 97, 206);
-   color: white;
+    color: white;
 }
 #onekey{
     color: white;
     border-radius: 50px;
-    width: 13%;
+    min-width: 13%;
     height: 15px;
     margin: auto;
     padding: 10px;
@@ -187,7 +286,7 @@ a{
     margin: auto;
     margin-top: 20px;
     border-radius: 7px;
-    padding: 3px;
+    padding: 20px 18px;
     display: flex;
     height: 230px;
 }
@@ -214,24 +313,36 @@ a{
 }
 .earning{
     width: 50%;
-    padding: 5px;
+    padding: 15px;
     background-color: rgba(160, 153, 153, 0.301);
     border-radius: 10px;
     height: 200px;
 } 
 .earningimage{
-    width: 160%;
-    height: 210px;
+    width: 140%;
+    height: 230px;
     border-radius: 10px;
 }
 .discover{
      display: flex;
-     width: 88%;
+     width: 90%;
      margin: auto;
-     overflow: hidden;       
+     /* height: 200px; */
+     overflow: hidden;    
+     position: relative;  
 }
-.resortimage{
-    width: 200px;
+.discover:hover .slide-button{
+    opacity: 1;
+}
+.discoverh{
+    margin: auto; 
+    width: 90%;
+}
+.resortimage img{
+    height: 300px;
+    width: 225px;
+    margin: 10px;
+    border-radius: 20px;
 }
 #scrollbtn{
 height: 40px;
@@ -245,49 +356,14 @@ border: none;
 .resortitem{
     font-weight: bold;
     color: white;
-     position: absolute;
-    top: 260px;
-    left: 10px;
+    position: relative;
+    top: 300px;
+    left: 30px;
 }
 .discoverchild{
     display: flex;
     width: 100%;
     transition: all 1s ease-in-out;
-}
-.resort{
-    margin: auto;
-    width: 100%;
-    position: relative; 
-}
-.img1{
-    border-radius: 10px;
-    height: 300px;
-    width: 80%;
-
-}
-.img2{
-     border-radius: 10px;
-    height: 300px;
-    width: 80%;
-
-}
-.img3{
-    border-radius: 10px;
-    height: 300px;
-    width: 80%;
-
-}
-.img4{
-    border-radius: 10px;
-    height: 300px;
-    width: 80%;
-
-}
-.img5{
-    border-radius: 10px;
-    height: 300px;
-    width: 80%;
-
 }
 .laborday{
     background-image: url(f.jpg);
@@ -306,7 +382,7 @@ border: none;
     top: 100px;
     left: 60px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
 }
 .unlock{    
     background-color: rgb(30, 41, 194);
@@ -322,18 +398,31 @@ border: none;
     margin: auto;
     display: flex;
 }
+.trendchild{
+    display: flex;
+}
 .trendingdestination{
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 280px;
     display: flex;
-     width: 88%;
-     overflow: hidden;
+    width: 90%;
 }
 .trendingdestinationcontent{
-    margin: 10px;
+    margin: 5px;
     height: 200px;
     width: 40%;
-    border: 2px solid gray;
+    padding: 5px;
     border-radius: 10px;
+}
+.txt{
+    padding: 5px;
+    margin: 0;
+    border-style: inset;
+}
+.txt p{
+    margin: 5px;
 }
 .discoverimage{
     height: 150px;
@@ -347,13 +436,15 @@ border: none;
     background-image: url(g.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
+    padding: 20px;
     padding-top: 120px;
     border-radius: 20px;
 }
 .lastminute{
     display: flex;
     justify-content: space-between;
+    margin: 15px;
 }
 #alldeals{
     background-color: white;
@@ -382,10 +473,15 @@ border: none;
     width: 25%;
     padding: 1px;
 }
+.para{
+    margin: 7px;
+    margin-left: 20px;
+}
 .dealsimage{
     display: flex;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .memberprice{
     background-color: blue;
@@ -405,6 +501,12 @@ margin:auto;
 display: flex;
 }
 .uniqueplaces{
+    width: 20%;
+    margin-top: 10px;
+    padding: 8px;
+    
+}
+.uniqueplaces1{
     width: 20%;
     margin-top: 10px;
     padding: 8px;
@@ -473,6 +575,9 @@ margin-top: 20px;
     height: 200px;
     border-radius: 15px;
 }
+.h11{
+    margin-left: 70px;
+}
 .outing{
     width: 90%;
     margin: auto;
@@ -515,7 +620,7 @@ margin-top: 20px;
     text-decoration: underline;
 }
 .footer{
-    background-color: rgb(160, 158, 158);
+    background-color: white;
     border-radius: 10px;
     padding: 18px;
     margin: auto;
@@ -536,83 +641,42 @@ margin-top: 20px;
 .footercontent{
     display: flex;
 }
-.next{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 90px;
-    padding: 2px 3px;
-    border-radius: 50%;
-    position: relative;
-    right: 20px;
-    top: 100px;
+.paragraph{
+    font-size: 13px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+.slide-button {
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
+    font-weight: bolder;
+    font-size: 15px;
+    /* transform: translateY(-50%); */
+    background-color: rgb(219, 214, 214);
+    color: blue;
+    border: none;
+    padding: 3px;
     cursor: pointer;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.prev {
+    left: 10px;
 }
 
-.previous{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 90px;
-    padding: 2px 3px;
-    border-radius: 50%;
-    position: relative;
-    right:101%;
-    top: 100px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-    cursor: pointer;
-}
-.discover:hover .previous{
-    opacity: 1;
-}
-.discover:hover .next{
-    opacity: 1;
-}
-.next1{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 30px;
-    padding: 2px 3px;
-    border-radius:20px ;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-    cursor: pointer;
-    position: relative;
-    top: 100px;
-    right: 30px;
-}
-.previous1{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 30px;
-    padding: 2px 3px;
-    border-radius: 20px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-    cursor: pointer;
-    position: relative;
-    top: 100px;
-    right: 100%;
-}
-.trendchild{
-    display: flex;
-    width: 100%;
-    transition: all 1s ease-in-out;
-}
-.trendingdestination:hover .next1{
-    opacity: 1;
-}
-.trendingdestination:hover .previous1{
-    opacity: 1;
+.next {
+    right: 10px;
 }
 .dealschild{
     display: flex;
@@ -620,38 +684,308 @@ margin-top: 20px;
     transition: all 1s ease-in-out;
 }
 .next2{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 30px;
-    padding: 2px 3px;
-    border-radius:20px ;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    opacity:0 ;
-    transition: opacity 1s ease;
+    font-weight: bolder;
+    font-size: 15px;
+    /* transform: translateY(-50%); */
+    background-color: rgb(219, 214, 214);
+    color: blue;
+    border: none;
+    padding: 3px;
     cursor: pointer;
-    position: relative;
-    top: 200px;
-    right: 20px;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
 }
 .previous2{
-    background-color: black;
-    color: white;
-    height: 25px;
-    width: 30px;
-    padding: 2px 3px;
-    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
+    font-weight: bolder;
+    font-size: 15px;
+    /* transform: translateY(-50%); */
+    background-color: rgb(219, 214, 214);
+    color: blue;
+    border: none;
+    padding: 3px;
     cursor: pointer;
-    position: relative;
-    top: 200px;
-    right: 101%;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 .dealsimage:hover .next2{
     opacity: 1;
 }
 .dealsimage:hover .previous2{
     opacity: 1;
+}
+.none{
+    display: none;
+}
+#menu{
+    display: none;
+}
+@media screen and (max-width:400px){
+    .navbar{
+        width: 100%;
+        margin: auto;
+        font-size: 10px;
+    }
+    .getapp{
+        width: 100%;
+        height: 30px;
+    }
+    #menu{
+        display: flex;
+        font-size: 20px;
+        margin: auto;
+    }
+    .navcontent{
+        width: 30%;
+    }
+    .logocontent{
+        font-size: 13px;
+        display: flex;
+    }
+    #logoimge{
+        height: 30px;
+        width: 30px;
+
+    }
+    .optioncontainer{
+        display: none;
+    }
+    .navcontent a{
+        display: none;
+        font-size: 10px;
+    }
+    #fa-message{
+        display: none;
+    }
+    #Signinnav{
+        display: none;
+    }
+    .services{
+        height: 300px;
+    }
+    .srvicesitem{
+        font-size: 10px;
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .getapp{
+        display: ;
+    }
+    #bu{
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+    #Dates{
+        width: 100%;
+        height: 43px;
+        padding: 2px;
+        margin: 5px;
+    }
+    #travel{
+        width: 100%;
+        height: 43px;
+        margin: 5px;
+    }
+    #Search{
+        width: 100%;
+        margin: 5px;
+    }
+    .offer{
+        font-size: 10px;
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .offerimg{
+        height: 50px;
+        width: 50px;
+    }
+    #offerbtn{
+        width: 70%;
+    }
+    #onekey{
+        display: none;
+    }
+    .earningcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 200px;
+    }
+    .earningcontainer2{
+        display: none;
+    }
+    .earning{
+        width: 90%;
+        height: fit-content;
+    }
+    .keyimage{
+        display: none;
+    }
+    .discoverh{
+        font-size: 10px;
+        width: 100%;
+        margin-left: 40px;
+    }
+    .discoverh h1{
+        display: flex;
+    }
+    .discover{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    .laborday{
+        font-size: 10px;
+        width: 90%;
+        height: 300px;
+    }
+    .laborcontent{
+        width: 60%;
+        height: 100px;
+    }
+    .unlock{
+        width: 50%;
+
+    }
+    .h11{
+        font-size: 16px;
+        margin: 0;
+    }
+    .trendingdestination{
+        width: 73%;
+        display: flex;
+        overflow: hidden;
+    }
+    .dealscontainer{
+        font-size: 10px;
+    }
+    .lastminute{
+        font-size: 10px;
+        display: flex;
+        height: 10px;
+    }
+    .lastminute h1{
+        font-size: 15px;
+    }
+    #alldeals{
+        width: 30%;
+        height: 30px;
+        border: none;
+    }
+    .para{
+        margin: ;
+    }
+    .dealsimage{
+        display: flex;
+        width: 67%;
+        font-size: 15px;
+    }
+    .places{
+        width: 100%
+    }
+    .dealscontainer{
+        width: 90%;
+        margin-left: 30px;
+        height: 400px;
+    }
+    .h22{
+        font-size: 12px;
+        width: 90%;
+        margin-left: 5px;
+    }
+    .uniquestays{
+        display: flex;
+        width: 90%;
+        font-size: 15px;
+        height: 450px;
+        margin: auto;
+        
+    }
+    .uniqueplaces{
+        display: none;
+    }
+    .uniqueplaces1{
+        width: 90%;
+        height: 430px;
+        margin: auto;
+    }
+    .uniqecontainer{
+        width: 90%;
+        margin-left: 14px;
+        height: 00px;
+        border: 2px solid black;
+        margin: auto;
+    }
+    .expediaapp{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .appimage{
+        display: none;
+    }
+    .apppqr{
+        height: 99px;
+    }
+    .appcontent h1{
+        font-size: 14px;
+    }
+    .animation{
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    .images{
+        display: none;
+    }
+    .outing{
+        display: none;
+    }
+    .travelword{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    .links{
+        font-size: 10px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .paragraph{
+        font-size: 10px;
+    }
 }

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="secondtask.css">
     <!-- <script src="https://kit.fontawesome.com/d4c056c8db.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     
     <title>Document</title>
 </head>
@@ -15,25 +17,34 @@
         <div class="logocontent">        
         <a href="#" id="logoimage"> <img src="images.png" alt="logo" id="logoimge">
         <h1>Expedia</h1></a>
-        <select name="shop travel" id="">
-            <i class="fa-solid fa-plane"></i>  <option value="">Shop Travel</option>
-            <option value="">stays</option>
-            <option value="">Cars</option>
-            <option value="">Flights</option>
-            <option value="">Things to do</option>  
-            <option value="">curies</option>  
-        </select>
+        <div class="optioncontainer">
+            <div class="shoptravel"><h4>Shop Travel<i class="fa-solid fa-angle-down"></i></h4></div>  
+            <div class="hovdiv">
+                <div class="option1"><i class="fa-sharp-duotone fa-solid fa-hotel"></i><h5 class="select">Stays</h5></div>
+                <div class="option1"><i class="fa-duotone fa-solid fa-plane-departure"></i><h5 class="select">Flight</h5></div>
+                <div class="option1"><i class="fa-solid fa-car"></i><h5 class="select">Cars</h5></div>
+                <div class="option1"><i class="fa-solid fa-hand-holding-heart"></i></i><h5 class="select">Packages</h5></div>
+                <div class="option1"><i class="fa-solid fa-ship"></i><h5 class="select">Cruise</h5></div>
+               <div class="hovdiv2">  
+                <h6 class="select2">Deals</h6>
+                <h6 class="select2">Groups & meetings</h6>
+                <h6 class="select2">North Escape magzine</h6>
+                <h6 class="select2">One key credit card</h6>
+            </div>
+            </div>
+        </div>
         </div>
         <div class="navcontent">
-        <button class="getapp">Get the app</button>
+        <button class="getapp"><i class="fa-solid fa-download"></i>Get the app</button>
         <a href="#"><i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English</a> 
-        <a href="#"> List your property</a> 
+        <a href="#" class="listpro"> List your property</a> 
         <a href="#"> Support</a>
         <a href="#">Trips</a> 
-        <img src="message.png" alt="" style="height: 20px; margin-top: 15px;">
-        <a href="#">Sign in</a>  
+        <i class="fa-solid fa-message" id="fa-message"></i>
+        <a href="#" id="Signinnav">Sign in</a>  
     
       </div>
+      <i class="fa-solid fa-bars" id="menu"></i>
       </div>
 
      <div class="services">
@@ -45,20 +56,22 @@
                 <li><a href="#">Packages</a></li>  
                 <li><a href="#">Tings to do </a></li>  
                 <li><a href="#">Curies</a></li>  
+                
             </ul>
         </div>
         <div class="search">
             <div class="buttons"> 
-            <button id="bu"><i class="fa-solid fa-location-dot" style="float: left; font-size: 20px; padding: 5px;"></i> <span style="float: left; padding: 5px;">Where to ?</span></button>
-            <button id="Dates"><i class="fa-solid fa-calendar-days" style="font-size: 20px; padding: 5px;"></i> <span style="font-size: 12px; float: left;">Dates</span> <br><span style="float: left; font-size: 17px;">Aug 3 - Aug 8</span></buttont>
-            <button id="travel"><i class="fa-duotone fa-solid fa-user" style="float: left; padding: 6px; font-size: 20px;"></i><span style="font-size: 12px;float: left;">Travel</span><br><span style="float: left; font-size: 17px;">2travels , 1room</span></button>
+            <button id="bu"><i class="fa-solid fa-location-dot" style="float: left; font-size: 20px; padding: 5px;"></i> <span style="float: left; padding: 5px; padding: 5px;">Where to ?</span></button>
+            <button id="Dates"><i class="fa-solid fa-calendar-days" style="font-size: 20px; padding: 5px;"></i> <span style="font-size: 12px; float: left;">Dates</span> <br><span style="float: left; font-size: 17px; padding: 5px;">Aug 3 - Aug 8</span></buttont>
+            <button id="travel"><i class="fa-duotone fa-solid fa-user" style="float: left; padding: 6px; font-size: 20px;"></i><span style="font-size: 12px;float: left;">Travel</span><br><span style="float: left; font-size: 17px; padding: 5px;">2travels , 1room</span></button>
             <button id="Search">Search</button>
         </div>
-        <input type="checkbox"><label for="">Add flight</label>
-        <input type="checkbox"><label for="">Add a car</label>
+        <input type="checkbox"><label for="checkbox">Add flight</label>
+        <input type="checkbox"><label for="checkbox">Add a car</label>
        </div>
     </div>
         <div class="offer">
+            <img src="download (2).jpeg" alt="" class="offerimg">
             <h3>Save 10 or more over 100,00 Hotels with member prices.Also,members save up to when you add a hotel to flight </h3>
             <button id="offerbtn">Sign in</button>
             <a href="#" id="onekey">Learn about one key</a>
@@ -71,14 +84,15 @@
                 <a href="#" class="learnmore">Learn More</a>
             </div>
             <div class="earningcontainer2">
-                        <img src="download (2).jpeg" alt="" class="earningimage">
+            <img src="download (2).jpeg" alt="" class="earningimage">
             </div>
-        <img src="EP_OneKey_CC_stacked.png" alt="" class="keyimage">
+            <img src="EP_OneKey_CC_stacked.png" alt="" class="keyimage">
     </div>
-        <div> <h1 style="margin-left: 70px;">Discover your new favourite stay</h1></div>
+        <div class="discoverh"> <h1 style="margin: auto;">Discover your new favourite stay</h1></div>
         <!-- discover  -->
         <div class="discover"  >
-            <div class="discoverchild" id="discover"> 
+            <button class="slide-button prev" id="pre">&#10094;</button>
+            <div class="discoverchild" id="discover">
             <div class="resort">
                 <div class="resortitem"> <p class="">Resort</p></div>
                 <div class="resortimage"> <img src="resort.jpeg" alt="realoading" class="img1"></div>
@@ -132,64 +146,43 @@
                 <div class="resortimage"> <img src="petfriendly.jpeg" alt="realoading" class="img5"></div>
             </div>
         </div>
-            <div class="next" id="Next">&#10095;</div>
-            <div class="previous" id="pre">&#10094;</div>
+            
+        <button class="slide-button next" id="Next">&#10095;</button>
             <!-- <button id="scrollbtn">></button> -->
         
         </div>
         <div class="laborday">
             <div class="laborcontent">
-                <h2>Labor Dat gataways</h2><br>
+                <h2>Labor Day Gataways</h2><br>
                 <p>Book a hokiday weekand trip to savor the end of summer</p><br>
                 <a href="#" class="unlock">Unlock Your Deals</a>
             </div>
         </div>
-        <h1 style="margin-left: 70px;">Expolre stays in trending destination</h1>
+        <h1 class="h11" style="padding: 15px;">Expolre stays in trending destination</h1>
         <div class="trendingdestination">
             <div class="trendchild" id="trend">
                 <div class="trendingdestinationcontent">
                     <img src="mexicocity.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Mexico city</h3>
-                    <p>Mexico</p>
+                    <div class="txt"><h3>Mexico city</h3>
+                    <p>Mexico</p></div>
                 </div>
                 <div class="trendingdestinationcontent">
                     <img src="rome.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Rome</h3>
-                    <p>Italy</p>
+                   <div class="txt"><h3>Rome</h3>
+                    <p>Italy</p></div>
                 </div>
                 <div class="trendingdestinationcontent">
                     <img src="barcelona.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Barcelona</h3>
-                    <p>Span</p>
+                    <div class="txt"> <h3>Barcelona</h3>
+                    <p>Span</p></div>
                 </div>
                 <div class="trendingdestinationcontent">
-                    <img src="barcelona.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Barcelona</h3>
-                    <p>Span</p>
+                    <img src="ajwalsultanhwmt.jpeg" alt=" eror" class="discoverimage">
+                   <div class="txt"> <h3>Harare</h3>
+                    <p>Zimbawe</p></div>
                 </div>
-                <div class="trendingdestinationcontent">
-                    <img src="barcelona.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Barcelona</h3>
-                    <p>Span</p>
-                </div>
-                <div class="trendingdestinationcontent">
-                    <img src="lisbon.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Lisbon</h3>
-                    <p>Portugal</p>
-                </div>
-                <div class="trendingdestinationcontent">
-                    <img src="islamabad.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Islamabad</h3>
-                    <p>Pakistan</p>
-                </div>
-                <div class="trendingdestinationcontent">
-                    <img src="islamabad.jpeg" alt=" eror" class="discoverimage">
-                    <h3>Islamabad</h3>
-                    <p>Pakistan</p>
-                </div>
+              
             </div>
-                <div class="next1" id="Next1">&#10095;</div>
-            <div class="previous1" id="pre1">&#10094;</div>
           </div>
         <div class="dealscontainer">
             <div class="lastminute">
@@ -199,6 +192,7 @@
             <div class="para" style="color: white"><p>Showing deals for :Aug 9-Aug11</p></div>
             <!-- 3 -->
             <div class="dealsimage">
+                <div class="previous2 pre" id="pre2">&#10094;</div>
                 <div class="dealschild" id="deals"> 
                 <div class="places">
                     <img src="placedowntown.jpeg" alt=" eror" class="placesimage">
@@ -206,16 +200,16 @@
                     <h2>Place Dowmtown</h2><br><br>
                     <p><span style="font-weight: bold;">9.4/10</span> Exiptional (10009 reviews)</p>
                     <h4>$327 <del style="font-size: 15px; font-weight: normal;" >$435</del></h4>
-                    <p>Per Night <br>$811 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$811 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">25% off</p>
                 </div>
                 <div class="places">
                     <img src="ajwalsultanhwmt.jpeg" alt=" eror" class="placesimage">
                     <p>Istanbul</p>
                     <h2>AJWA Sultanahemt</h2><br><br>
-                    <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
+                    <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p><br>
                     <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
-                    <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$983 Total <br>includes Taxes and fees</p><br>
                     <p class="memberprice">Member Price Avaible</p>
                     <a href="#" class="ab">Sign in for Member Price</a>
                 </div>
@@ -223,87 +217,88 @@
                     <img src="the resdency hotel.jpeg" alt=" eror" class="placesimage">
                     <p>Lahore</p>
                     <h2>The Residency Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">7.4/10</span> Good (109 reviews)</p>
+                    <p><span style="font-weight: bold;">7.4/10</span> Good (109 reviews)</p><br>
                     <h4>$87 <del style="font-size: 15px; font-weight: normal;" >$100</del></h4>
-                    <p>Per Night <br>$92 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$92 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">20% off</p>
                 </div>
                 <div class="places">
                     <img src="the sultan hotel.jpeg" alt=" eror" class="placesimage">
                     <p>Toronote</p>
                     <h2>The Sutton Place Hotel Toronote</h2><br>
-                    <p><span style="font-weight: bold;">9.2/10</span> Exiptional (2009 reviews)</p>
+                    <p><span style="font-weight: bold;">9.2/10</span> Exiptional (2009 reviews)</p><br>
                     <h4>$300 <del style="font-size: 15px; font-weight: normal;" >$500</del></h4>
-                    <p>Per Night <br>310 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>310 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">30% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
                 <div class="places">
                     <img src="elafmakkah.jpeg" alt=" eror" class="placesimage">
                     <p>Makkah</p>
                     <h2>Elaf Bakkah Hotel</h2><br><br>
-                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p>
+                    <p><span style="font-weight: bold;">9.9/10</span> Nice (10339 reviews)</p><br>
                     <h4>$90 <del style="font-size: 15px; font-weight: normal;" >$170</del></h4>
-                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p>
+                    <p>Per Night <br>$110 Total <br>includes Taxes and fees</p><br>
                     <p class="offerdeals">45% off</p>
                 </div>
             </div>
-            <div class="next2" id="Next2">&#10095;</div>
-            <div class="previous2" id="pre2">&#10094;</div>
+            <div class="next2 next" id="Next2">&#10095;</div>
+            
         </div>
     </div>
-    <div style="margin-left: 70px; width: 90%;"> <h1>Expolare These Unique Stays </h1>
-    <p>showing deals for : <span style="font-weight: bold;">Aug30-Sep1</span></p></div>
+    <div class="h22" style="margin:auto ; width: 90%; padding: 15px;"> <h1>Expolare These Unique Stays </h1>
+    <p style="padding: 10px;">showing deals for : <span style="font-weight: bold;">Aug30-Sep1</span></p></div>
+    
     <div class="uniquestays">
-        <div class="uniqueplaces">
+        <div class="uniqueplaces1">
             <img src="natur and stars.jpeg" alt=" eror" class="uniqueimage">
             <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
             <h3>Natur & Stars</h3>
-            <p>Watkin Gelen</p>
+            <p>Watkin Gelen</p><br>
             <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
             <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
             <p class="memberprice">Member Price Avaible</p>
@@ -313,7 +308,7 @@
             <img src="white stollan ranch.jpeg" alt=" eror" class="uniqueimage">
             <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
             <h3>White Stallon Ranch</h3>
-            <p>Tucson</p>
+            <p>Tucson</p><br>
             <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
             <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
             <p class="memberprice">Member Price Avaible</p>
@@ -323,7 +318,7 @@
             <img src="cottage at heal.jpeg" alt=" eror" class="uniqueimage">
             <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
             <h3>Cottage at Healdburgs</h3>
-            <p>Healsburg</p>
+            <p>Healsburg</p><br>
             <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
             <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
            
@@ -332,7 +327,7 @@
             <img src="barasada.jpeg" alt=" eror" class="uniqueimage">
             <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
             <h3>Brasada</h3>
-            <p>Well Butte</p>
+            <p>Well Butte</p><br>
             <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
             <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
         </div>
@@ -340,7 +335,7 @@
             <img src="ocean vella.jpeg" alt=" eror" class="uniqueimage">
             <p><span style="font-weight: bold;">9.8/10</span> Exiptional (900 reviews)</p>
             <h3>Ocean Villas at Tutly bay</h3>
-            <p>Kahku</p>
+            <p>Kahku</p><br>
             <h4>$439 <del style="font-size: 15px; font-weight: normal;" >$610</del></h4>
             <p>Per Night <br>$983 Total <br>includes Taxes and fees</p>
             <p class="memberprice">Member Price Avaible</p>
@@ -386,7 +381,7 @@
             <p style="font-weight: bold;">find unmissable sport for sailling,suba,standup and more</p>
         </div>
     </div>
-    <h2 style="margin-left: 70px; color: rgb(94, 94, 218);">Expolre a worls of travel with Expedia</h2>
+    <h2 class="travelword" style="margin-left: 70px; color: rgb(94, 94, 218);">Expolre a worls of travel with Expedia</h2>
     <div class="links">
         <div class="linka"> 
         <a href="#">Top Hotel in Bostan</a>
@@ -427,7 +422,7 @@
     </div>
  </div>
  <div class="footer">
-    <h2>Expedia Group</h2>
+    <div><a href="#"><img src="EG_Wordmark_blue_RGB (1).svg" alt=""></a></div>
     <div class="footercontent">
     <div class="company">
         <h4>Company</h4>
@@ -465,6 +460,7 @@
         <a href="#">Feed back</a>
     </div>
 </div>
+<div class="paragraph">© 2024 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Expedia Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50.</div>
  </div>
  <script src="secondtask.js"></script>
 </body>
