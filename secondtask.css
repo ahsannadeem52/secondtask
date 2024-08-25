@@ -746,9 +746,12 @@ margin-top: 20px;
 #menu{
     display: none;
 }
-@media screen and (max-width:400px){
+.navcontent1{
+    display: none;
+}
+@media screen and (max-width:450px){
     .navbar{
-        width: 100%;
+        width: 90%;
         margin: auto;
         font-size: 10px;
     }
@@ -757,12 +760,37 @@ margin-top: 20px;
         height: 30px;
     }
     #menu{
-        display: flex;
+        display:block;
         font-size: 20px;
         margin: auto;
+        border: none;
+        margin-right: 50px;
+    }
+    #menu:hover + .navcontent {
+        display: block;
+        z-index: 10;
+        background-color: black;
+        color: white;
+        position: absolute;
+        height: auto;
+        right: 20px;
+        top: 70px;
+        border-radius: 8px;
     }
     .navcontent{
         width: 30%;
+    }
+    .navcontent{
+        display: none;
+        font-size: 10px;
+    }
+    .navcontent a{
+        color: white;
+    }
+    .navcontent button{
+        color: white;
+        background-color: black;
+        border: 1px solid white;
     }
     .logocontent{
         font-size: 13px;
@@ -776,10 +804,7 @@ margin-top: 20px;
     .optioncontainer{
         display: none;
     }
-    .navcontent a{
-        display: none;
-        font-size: 10px;
-    }
+  
     #fa-message{
         display: none;
     }
@@ -797,9 +822,6 @@ margin-top: 20px;
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-    .getapp{
-        display: ;
     }
     #bu{
         width: 100%;
@@ -887,7 +909,7 @@ margin-top: 20px;
         margin: 0;
     }
     .trendingdestination{
-        width: 73%;
+        width: 70%;
         display: flex;
         overflow: hidden;
     }
@@ -912,7 +934,7 @@ margin-top: 20px;
     }
     .dealsimage{
         display: flex;
-        width: 67%;
+        width: 60%;
         font-size: 15px;
     }
     .places{
@@ -921,7 +943,7 @@ margin-top: 20px;
     .dealscontainer{
         width: 90%;
         margin-left: 30px;
-        height: 400px;
+        height: 450px;
     }
     .h22{
         font-size: 12px;
